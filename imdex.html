@@ -32,39 +32,63 @@
       </div>
       <div class="toggleMenu"></div>
     </div>
+  </header>
 
-    <div class="banner">
-      <div class="bg">
-        <div class="content">
-          <h2> A New Home for<br></h2>
-          Game Lovers</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora quia aliquid autem libero
-            repellendus architecto reiciendis enim adipisci ex, veritatis tempore? Repellendus praesentium tenetur
-            quaerat, perferendis blanditiis enim unde.</p>
-          <a href="#" class="btn">join Now</a>
+  <div class="banner">
+    <div class="bg">
+      <div class="content">
+        <h2> A New Home for<br>   Game Lovers</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora quia aliquid autem libero
+          repellendus architecto reiciendis enim adipisci ex, veritatis tempore? Repellendus praesentium tenetur
+          quaerat, perferendis blanditiis enim unde.
+        </p>
+        <a href="#" class="btn">join Now</a>
+      </div>
+      <img src="./src/game.png" alt="">
+      <div>
+        <div class="game">
+          <h2> popular game</h2>
+          <ul>
+            <li> class="list active">All</li>
+            <li> class="list">Pc games</li>
+            <li> class="list">mobile games</li>
+          </ul>
+          <div> class="cardBx">
+            <div> class="card" data-item="pc">
+              <img src="./src/game.jpg" alt="">
+              <div class="content">
+                <h4>Game Name</h4>
+                <p></p>
+                <div class="progress-line"><span></span>
+                </div>
+                <div class="info">
+                  <p>pricing<br>
+                    <spam>$10</spam>
+                  </p>
+                  <a href="#">play Now</a>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
         </div>
 
-
-        <img src="./src/gamebg.png">
 
       </div>
     </div>
 
 
+    <script>
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrolly > 0);
+      }); 
+    </script>
 
+  </div>
 
-    </div>
-
-
-
-
-
-
-
-    </ul>
-
-
-  </header>
 </body>
 
 </html>
